@@ -1,4 +1,4 @@
-import { Cpu, Eye, Cloud, Calendar } from 'lucide-react';
+import { Cpu, Eye, Cloud, Calendar, PenTool } from 'lucide-react';
 
 export default function Research() {
   const researchAreas = [
@@ -182,6 +182,25 @@ export default function Research() {
                     <p className="text-xs text-muted-foreground">Planned for International Journal of Computer Aided Manufacturing, 2024</p>
                   </div>
                 </div>
+              </div>
+
+              {/* Latest Insights */}
+              <div className="mt-8 bg-gradient-to-r from-secondary/10 to-accent/10 rounded-xl p-6">
+                <h5 className="font-semibold text-primary mb-4 flex items-center">
+                  <PenTool className="w-5 h-5 mr-2" />
+                  Latest Insights & Articles
+                </h5>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Stay updated with my latest thoughts on AI in manufacturing, research methodologies, and industry trends through my Medium publications.
+                </p>
+                <a 
+                  href="https://medium.com/@akshayparanjape2" 
+                  className="inline-flex items-center text-secondary hover:text-secondary/80 transition-colors text-sm font-medium"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Read Latest Articles on Medium →
+                </a>
               </div>
             </div>
           </div>

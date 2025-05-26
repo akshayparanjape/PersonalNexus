@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useMutation, useQueryClient } from '@tanstack/react-query';
-import { Mail, MapPin, Phone, Linkedin, Github, Youtube, BookOpen } from 'lucide-react';
+import { Mail, MapPin, Phone, Linkedin, Github, Youtube, BookOpen, PenTool } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -108,6 +108,9 @@ export default function Contact() {
                 </a>
                 <a href="#" className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center hover:bg-secondary transition-colors">
                   <Youtube className="w-6 h-6" />
+                </a>
+                <a href="https://medium.com/@akshayparanjape2" className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center hover:bg-secondary transition-colors">
+                  <PenTool className="w-6 h-6" />
                 </a>
                 <a href="#" className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center hover:bg-secondary transition-colors">
                   <BookOpen className="w-6 h-6" />
