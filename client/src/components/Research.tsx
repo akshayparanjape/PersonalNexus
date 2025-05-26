@@ -133,21 +133,54 @@ export default function Research() {
               <h4 className="font-bold text-primary mb-6">Key Publications</h4>
               <div className="space-y-4">
                 <div className="bg-white p-4 rounded-lg border-l-4 border-secondary">
-                  <h5 className="font-medium text-primary mb-2">Quality-oriented Production process parameter optimization based on Predictive Model</h5>
-                  <p className="text-sm text-muted-foreground mb-2">IconPro Conference Presentation, Manufacturing Automation</p>
-                  <a href="#" className="text-secondary text-sm hover:underline">View Publication →</a>
+                  <h5 className="font-medium text-primary mb-2">Reinforcement Learning for Quality-Oriented Production Process Parameter Optimization Based on Predictive Models</h5>
+                  <p className="text-sm text-muted-foreground mb-2">Advances in Transdisciplinary Engineering, Vol. 23, 2023</p>
+                  <a href="https://doi.org/10.3233/ATDE230059" className="text-secondary text-sm hover:underline">View Publication →</a>
                 </div>
                 
                 <div className="bg-white p-4 rounded-lg border-l-4 border-accent">
-                  <h5 className="font-medium text-primary mb-2">AI-driven Semantic Segmentation for Ultrasonic NDT in Welding</h5>
-                  <p className="text-sm text-muted-foreground mb-2">Computer Vision & Manufacturing Quality Control</p>
+                  <h5 className="font-medium text-primary mb-2">Real-time Quality Monitoring of Wire EDM Process Using Machine Learning</h5>
+                  <p className="text-sm text-muted-foreground mb-2">18th CIRP Conference on Intelligent Computation in Manufacturing Engineering, 2024</p>
                   <a href="#" className="text-accent text-sm hover:underline">View Publication →</a>
                 </div>
                 
                 <div className="bg-white p-4 rounded-lg border-l-4 border-primary">
-                  <h5 className="font-medium text-primary mb-2">Reinforcement Learning Applications in Wire-EDM Process Optimization</h5>
-                  <p className="text-sm text-muted-foreground mb-2">Advanced Manufacturing & Process Control</p>
+                  <h5 className="font-medium text-primary mb-2">Automated Data Pre-processing for Machine Learning based Analyses</h5>
+                  <p className="text-sm text-muted-foreground mb-2">COLLA 2022, The Twelfth International Conference, Venice, Italy</p>
                   <a href="#" className="text-primary text-sm hover:underline">View Publication →</a>
+                </div>
+
+                <div className="bg-white p-4 rounded-lg border-l-4 border-secondary">
+                  <h5 className="font-medium text-primary mb-2">Bauteile ressourceneffizient reinigen mithilfe von KI</h5>
+                  <p className="text-sm text-muted-foreground mb-2">JOT – Journal für Oberflächentechnik, December 2022</p>
+                  <a href="https://www.jot-oberflaeche.de/zeitschrift/heftarchiv/artikel/bauteile-ressourceneffizient-reinigen-mithilfe-von-ki-3305477.html" className="text-secondary text-sm hover:underline">View Publication →</a>
+                </div>
+
+                <div className="bg-white p-4 rounded-lg border-l-4 border-accent">
+                  <h5 className="font-medium text-primary mb-2">Machine Learning for wire-based additive manufacturing</h5>
+                  <p className="text-sm text-muted-foreground mb-2">PMD Vollversammlung, September 2024, Berlin, Germany</p>
+                  <a href="#" className="text-accent text-sm hover:underline">View Publication →</a>
+                </div>
+
+                <div className="bg-white p-4 rounded-lg border-l-4 border-primary">
+                  <h5 className="font-medium text-primary mb-2">Quality-oriented Production process parameter optimization based on Predictive Model</h5>
+                  <p className="text-sm text-muted-foreground mb-2">3DMC Conference, November 2023, Aachen, Germany</p>
+                  <a href="#" className="text-primary text-sm hover:underline">View Publication →</a>
+                </div>
+              </div>
+
+              {/* Submitted Papers */}
+              <div className="mt-8 bg-blue-50 rounded-xl p-6">
+                <h5 className="font-semibold text-primary mb-4">Submitted & Under Review</h5>
+                <div className="space-y-3">
+                  <div className="border-l-4 border-blue-400 pl-4">
+                    <h6 className="font-medium text-primary text-sm">Manufacturing process parameter optimization: Comprehensive review and survey</h6>
+                    <p className="text-xs text-muted-foreground">Planned for Management and Production Engineering Review Journal, 2024</p>
+                  </div>
+                  <div className="border-l-4 border-blue-400 pl-4">
+                    <h6 className="font-medium text-primary text-sm">Reinforcement Learning controller for multi-objective process parameter optimization of pinion manufacturing process</h6>
+                    <p className="text-xs text-muted-foreground">Planned for International Journal of Computer Aided Manufacturing, 2024</p>
+                  </div>
                 </div>
               </div>
             </div>
