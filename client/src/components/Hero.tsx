@@ -54,7 +54,8 @@ export default function Hero() {
                 <img 
                   src={profilePic} 
                   alt="Akshay Paranjape - Professional Portrait" 
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-center"
+                  style={{ objectPosition: '50% 30%' }}
                 />
               </div>
               <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-accent rounded-full flex items-center justify-center animate-bounce-slow">
