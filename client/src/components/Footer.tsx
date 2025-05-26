@@ -4,8 +4,8 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <p className="text-gray-400">
-            © 2024 Akshay Paranjape. All rights reserved. | 
-            <span className="text-accent ml-1">Ph.D. Candidate & AI Research Leader</span>
+            © 2025 Akshay Paranjape. All rights reserved. | 
+            <span className="text-accent ml-1">AI Research Leader</span>
           </p>
           <div className="mt-4 flex justify-center space-x-6">
             <a href="#" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
