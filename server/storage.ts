@@ -111,7 +111,7 @@ export class MemStorage implements IStorage {
         longDescription: "Develops AI-driven semantic segmentation techniques to interpret ultrasonic data for post-process and in-process monitoring of resistance spot welding (RSW). Uses segmentation mask data to estimate weld measurements leveraging prior welding process knowledge.",
         category: "Computer Vision",
         technologies: ["U-Net", "Vision Transformers", "Active Learning", "Semantic Segmentation"],
-        imageUrl: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=300",
+        imageUrl: "https://images.unsplash.com/photo-1582719471384-894fbb16e074?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=300",
         featured: false,
       },
       {
