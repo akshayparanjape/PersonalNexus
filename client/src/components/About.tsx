@@ -2,7 +2,7 @@ export default function About() {
   const skills = [
     {
       category: "Machine Learning & AI",
-      items: ["Reinforcement Learning", "Deep Learning", "CNNs", "Transformers", "AutoML"],
+      items: ["Deep Learning", "Reinforcement Learning", "CNNs", "Transformers", "Generative AI", "AutoML"],
       color: "secondary"
     },
     {
