@@ -118,12 +118,36 @@ export default function Research() {
               <h4 className="font-bold text-primary mb-4">Research Impact</h4>
               <div className="grid grid-cols-2 gap-4">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-secondary mb-1">15+</div>
+                  <div className="text-2xl font-bold text-secondary mb-1">9</div>
                   <div className="text-sm text-muted-foreground">Research Projects</div>
                 </div>
                 <div className="text-center">
                   <div className="text-2xl font-bold text-accent mb-1">8+</div>
                   <div className="text-sm text-muted-foreground">Publications</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Key Publications */}
+            <div className="mt-8">
+              <h4 className="font-bold text-primary mb-6">Key Publications</h4>
+              <div className="space-y-4">
+                <div className="bg-white p-4 rounded-lg border-l-4 border-secondary">
+                  <h5 className="font-medium text-primary mb-2">Quality-oriented Production process parameter optimization based on Predictive Model</h5>
+                  <p className="text-sm text-muted-foreground mb-2">IconPro Conference Presentation, Manufacturing Automation</p>
+                  <a href="#" className="text-secondary text-sm hover:underline">View Publication →</a>
+                </div>
+                
+                <div className="bg-white p-4 rounded-lg border-l-4 border-accent">
+                  <h5 className="font-medium text-primary mb-2">AI-driven Semantic Segmentation for Ultrasonic NDT in Welding</h5>
+                  <p className="text-sm text-muted-foreground mb-2">Computer Vision & Manufacturing Quality Control</p>
+                  <a href="#" className="text-accent text-sm hover:underline">View Publication →</a>
+                </div>
+                
+                <div className="bg-white p-4 rounded-lg border-l-4 border-primary">
+                  <h5 className="font-medium text-primary mb-2">Reinforcement Learning Applications in Wire-EDM Process Optimization</h5>
+                  <p className="text-sm text-muted-foreground mb-2">Advanced Manufacturing & Process Control</p>
+                  <a href="#" className="text-primary text-sm hover:underline">View Publication →</a>
                 </div>
               </div>
             </div>
