@@ -4,7 +4,7 @@ export default function Experience() {
   const experiences = [
     {
       period: "Sept 2023 – April 2025",
-      position: "Head of AI Project",
+      position: "Head of AI Projects",
       company: "IconPro GmbH, Aachen",
       responsibilities: [
         "Lead contact for key clients, guiding AI requirements and integration",
