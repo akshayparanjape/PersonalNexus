@@ -4,7 +4,7 @@ export default function Research() {
   const researchAreas = [
     {
       icon: Cpu,
-      title: "AI for Manufacturing",
+      title: "AI in Manufacturing",
       description: "Developing reinforcement learning frameworks for quality-oriented manufacturing processes, focusing on real-time optimization and predictive maintenance.",
       color: "secondary"
     },
