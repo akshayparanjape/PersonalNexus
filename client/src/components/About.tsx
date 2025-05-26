@@ -20,7 +20,7 @@ export default function About() {
   const education = [
     {
       degree: "Ph.D. AI in Manufacturing (In Progress)",
-      institution: "RWTH Aachen University",
+      institution: "RWTH Aachen University in collaboration with WZL & Fraunhofer IPT",
       color: "secondary"
     },
     {
