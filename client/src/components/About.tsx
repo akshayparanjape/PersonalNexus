@@ -45,7 +45,7 @@ export default function About() {
         
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           <div className="animate-slide-in-left">
-            <h3 className="text-2xl font-bold text-primary mb-6">Research & Innovation Leader</h3>
+            <h3 className="text-2xl font-bold text-primary mb-6">Industrial AI and Innovation Leader</h3>
             <p className="text-muted-foreground mb-6 leading-relaxed">
               Currently pursuing my Ph.D. at RWTH Aachen University, I specialize in AI for manufacturing with a focus on Reinforcement Learning for quality-oriented production processes. My work bridges the gap between cutting-edge academic research and practical industrial applications.
             </p>
@@ -62,7 +62,7 @@ export default function About() {
                 <div className="text-muted-foreground">Years Experience</div>
               </div>
               <div className="text-center p-6 bg-white rounded-xl shadow-lg hover-lift">
-                <div className="text-3xl font-bold text-accent mb-2">50+</div>
+                <div className="text-3xl font-bold text-accent mb-2">15+</div>
                 <div className="text-muted-foreground">Projects Delivered</div>
               </div>
             </div>
