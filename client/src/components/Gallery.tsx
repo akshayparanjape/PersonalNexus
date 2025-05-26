@@ -65,8 +65,7 @@ export default function Gallery() {
 
   const tabs = [
     { id: 'professional', label: 'Professional' },
-    { id: 'behind-scenes', label: 'Behind the Scenes' },
-    { id: 'events', label: 'Events & Talks' }
+    { id: 'behind-scenes', label: 'Behind the Scenes' }
   ];
 
   return (
