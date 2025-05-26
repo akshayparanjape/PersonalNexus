@@ -6,8 +6,10 @@ import { Badge } from '@/components/ui/badge';
 import type { Project } from '@shared/schema';
 
 export default function Projects() {
+  const [showAllProjects, setShowAllProjects] = useState(false);
+  
   const { data: projects, isLoading } = useQuery<Project[]>({
-    queryKey: ['/api/projects?featured=true'],
+    queryKey: showAllProjects ? ['/api/projects'] : ['/api/projects?featured=true'],
   });
 
   if (isLoading) {
@@ -39,10 +41,15 @@ export default function Projects() {
     <section id="projects" className="section-padding bg-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-primary mb-4">Featured Projects</h2>
+          <h2 className="text-4xl font-bold text-primary mb-4">
+            {showAllProjects ? "All Projects" : "Featured Projects"}
+          </h2>
           <div className="w-20 h-1 bg-secondary mx-auto"></div>
           <p className="text-muted-foreground mt-6 max-w-2xl mx-auto">
-            Discover my key projects spanning AI for manufacturing, reinforcement learning, and cloud-native solutions.
+            {showAllProjects 
+              ? "Complete portfolio of AI research projects, manufacturing solutions, and technical innovations."
+              : "Discover my key projects spanning AI for manufacturing, reinforcement learning, and cloud-native solutions."
+            }
           </p>
         </div>
         
@@ -103,8 +110,11 @@ export default function Projects() {
         
         {/* View All Projects Button */}
         <div className="text-center mt-12">
-          <Button className="bg-secondary text-white hover:bg-secondary/90 hover-lift">
-            <span>View All Projects</span>
+          <Button 
+            onClick={() => setShowAllProjects(!showAllProjects)}
+            className="bg-secondary text-white hover:bg-secondary/90 hover-lift"
+          >
+            <span>{showAllProjects ? "Show Featured Only" : "View All Projects"}</span>
             <ArrowRight className="w-5 h-5 ml-2" />
           </Button>
         </div>
