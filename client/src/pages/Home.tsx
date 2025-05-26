@@ -9,6 +9,7 @@ import Gallery from '@/components/Gallery';
 import Blog from '@/components/Blog';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
+import AIAvatar from '@/components/AIAvatar';
 
 export default function Home() {
   useEffect(() => {
@@ -50,6 +51,7 @@ export default function Home() {
         <Contact />
       </main>
       <Footer />
+      <AIAvatar />
     </div>
   );
 }
