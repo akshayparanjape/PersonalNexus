@@ -93,27 +93,7 @@ export default function Contact() {
                 </div>
               </div>
               
-              <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 bg-accent rounded-lg flex items-center justify-center flex-shrink-0">
-                  <MapPin className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <h4 className="font-semibold mb-1">Location</h4>
-                  <p className="text-gray-300">Keplerstr. 18, 91056 Erlangen, Germany</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center flex-shrink-0">
-                  <Phone className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <h4 className="font-semibold mb-1">Phone</h4>
-                  <a href="tel:+491639079165" className="text-gray-300 hover:text-white transition-colors">
-                    +49 1639079165
-                  </a>
-                </div>
-              </div>
+
             </div>
             
             {/* Professional Networks */}
