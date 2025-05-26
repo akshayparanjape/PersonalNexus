@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import profilePic from '@assets/profile-pic-800kb.jpg';
 import informal1 from '@assets/informal1.jpg';
 import informal2 from '@assets/informal2.jpg';
 import informal3 from '@assets/informal3.jpg';
+import conferencePresentation from '@assets/WhatsApp Image 2025-05-26 at 21.24.10_f740dab1.jpg';
+import eventOutdoor from '@assets/WhatsApp Image 2025-05-09 at 10.07.48_bdaeddc0.jpg';
 
 export default function Gallery() {
   const [activeTab, setActiveTab] = useState('professional');
@@ -11,19 +12,19 @@ export default function Gallery() {
   const galleries = {
     professional: [
       {
-        src: profilePic,
-        title: "Professional Portrait",
-        description: "Official headshot for conferences and publications"
+        src: conferencePresentation,
+        title: "Research Presentation",
+        description: "Presenting AI production optimization at IconPro conference"
+      },
+      {
+        src: eventOutdoor,
+        title: "Industry Conference",
+        description: "Attending Control trade fair - manufacturing automation event"
       },
       {
         src: "https://images.unsplash.com/photo-1581094288338-2314dddb7ece?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
         title: "Research Laboratory",
         description: "RWTH Aachen AI research facility"
-      },
-      {
-        src: "https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-        title: "IconPro Office",
-        description: "Collaborative workspace in Aachen"
       }
     ],
     'behind-scenes': [
