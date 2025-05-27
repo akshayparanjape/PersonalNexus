@@ -22,9 +22,9 @@ export default function Gallery() {
         description: "Attending Control trade fair - manufacturing automation event"
       },
       {
-        src: "https://images.unsplash.com/photo-1581094288338-2314dddb7ece?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+        src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
         title: "Research Laboratory",
-        description: "RWTH Aachen AI research facility"
+        description: "WZL RWTH Aachen & Fraunhofer IPT - Advanced manufacturing and AI research facilities"
       }
     ],
     'behind-scenes': [
