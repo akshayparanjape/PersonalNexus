@@ -64,13 +64,13 @@ export default function Research() {
           </p>
         </div>
         
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Research Areas */}
           <div>
-            <h3 className="text-2xl font-bold text-primary mb-8">Research Focus Areas</h3>
-            <div className="space-y-6">
+            <h3 className="text-2xl font-bold text-primary mb-6">Research Focus Areas</h3>
+            <div className="space-y-4">
               {researchAreas.map((area, index) => (
-                <div key={index} className="bg-white rounded-xl shadow-lg p-6 hover-lift">
+                <div key={index} className="bg-white rounded-xl shadow-lg p-5 hover-lift">
                   <div className="flex items-center mb-4">
                     <div className={`w-12 h-12 rounded-lg flex items-center justify-center mr-4 ${
                       area.color === 'secondary' ? 'bg-secondary/10' :
@@ -93,8 +93,8 @@ export default function Research() {
           
           {/* Recent Research Projects */}
           <div>
-            <h3 className="text-2xl font-bold text-primary mb-8">Notable Research Projects</h3>
-            <div className="space-y-6">
+            <h3 className="text-2xl font-bold text-primary mb-6">Notable Research Projects</h3>
+            <div className="space-y-4">
               {researchProjects.map((project, index) => (
                 <div key={index} className={`border-l-4 pl-6 ${
                   project.color === 'secondary' ? 'border-secondary' :
@@ -114,8 +114,8 @@ export default function Research() {
             </div>
             
             {/* Research Metrics */}
-            <div className="mt-8 bg-slate-50 rounded-xl p-6">
-              <h4 className="font-bold text-primary mb-4">Research Impact</h4>
+            <div className="mt-6 bg-slate-50 rounded-xl p-5">
+              <h4 className="font-bold text-primary mb-3">Research Impact</h4>
               <div className="grid grid-cols-2 gap-4">
                 <div className="text-center">
                   <div className="text-2xl font-bold text-secondary mb-1">9</div>
@@ -129,8 +129,8 @@ export default function Research() {
             </div>
 
             {/* Key Publications */}
-            <div className="mt-8">
-              <h4 className="font-bold text-primary mb-6">Key Publications</h4>
+            <div className="mt-6">
+              <h4 className="font-bold text-primary mb-4">Key Publications</h4>
               <div className="space-y-4">
                 <div className="bg-white p-4 rounded-lg border-l-4 border-secondary">
                   <h5 className="font-medium text-primary mb-2">Reinforcement Learning for Quality-Oriented Production Process Parameter Optimization Based on Predictive Models</h5>
