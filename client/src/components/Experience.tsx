@@ -62,82 +62,117 @@ export default function Experience() {
           </p>
         </div>
         
-        <div className="relative">
+        <div className="relative max-w-6xl mx-auto">
           {/* Timeline line */}
           <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-border hidden lg:block"></div>
           
-          <div className="space-y-12">
+          <div className="space-y-12 lg:space-y-16">
             {experiences.map((exp, index) => (
-              <div key={index} className="relative flex flex-col lg:flex-row items-center">
-                {/* Left side content */}
-                <div className={`lg:w-1/2 ${exp.side === 'left' ? 'lg:pr-8' : 'lg:pr-8 lg:order-2'} mb-8 lg:mb-0`}>
-                  {exp.side === 'left' && (
-                    <div className="bg-white rounded-xl shadow-lg p-8 hover-lift">
-                      <div className="flex items-center mb-4">
-                        <div className={`w-3 h-3 rounded-full mr-3 ${
-                          exp.color === 'secondary' ? 'bg-secondary' :
-                          exp.color === 'accent' ? 'bg-accent' :
-                          'bg-primary'
-                        }`}></div>
-                        <span className={`text-sm font-medium ${
-                          exp.color === 'secondary' ? 'text-secondary' :
-                          exp.color === 'accent' ? 'text-accent' :
-                          'text-primary'
-                        }`}>
-                          {exp.period}
-                        </span>
-                      </div>
-                      <h3 className="text-xl font-bold text-primary mb-2">{exp.position}</h3>
-                      <h4 className="text-accent font-medium mb-4">{exp.company}</h4>
-                      <ul className="text-muted-foreground space-y-2">
-                        {exp.responsibilities.map((resp, respIndex) => (
-                          <li key={respIndex} className="flex items-start">
-                            <CheckCircle className="w-4 h-4 text-accent mt-1 mr-2 flex-shrink-0" />
-                            {resp}
-                          </li>
-                        ))}
-                      </ul>
+              <div key={index} className="relative">
+                {/* Mobile layout - single column */}
+                <div className="lg:hidden">
+                  <div className="bg-white rounded-xl shadow-lg p-6 hover-lift">
+                    <div className="flex items-center mb-4">
+                      <div className={`w-3 h-3 rounded-full mr-3 ${
+                        exp.color === 'secondary' ? 'bg-secondary' :
+                        exp.color === 'accent' ? 'bg-accent' :
+                        'bg-primary'
+                      }`}></div>
+                      <span className={`text-sm font-medium ${
+                        exp.color === 'secondary' ? 'text-secondary' :
+                        exp.color === 'accent' ? 'text-accent' :
+                        'text-primary'
+                      }`}>
+                        {exp.period}
+                      </span>
                     </div>
-                  )}
+                    <h3 className="text-xl font-bold text-primary mb-2">{exp.position}</h3>
+                    <h4 className="text-accent font-medium mb-4">{exp.company}</h4>
+                    <ul className="text-muted-foreground space-y-2">
+                      {exp.responsibilities.map((resp, respIndex) => (
+                        <li key={respIndex} className="flex items-start">
+                          <CheckCircle className="w-4 h-4 text-accent mt-1 mr-2 flex-shrink-0" />
+                          {resp}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
-                
-                {/* Timeline dot */}
-                <div className={`hidden lg:block absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full border-4 border-white ${
-                  exp.color === 'secondary' ? 'bg-secondary' :
-                  exp.color === 'accent' ? 'bg-accent' :
-                  'bg-primary'
-                }`}></div>
-                
-                {/* Right side content */}
-                <div className={`lg:w-1/2 ${exp.side === 'right' ? 'lg:pl-8' : 'lg:pl-8 lg:order-1'}`}>
-                  {exp.side === 'right' && (
-                    <div className="bg-white rounded-xl shadow-lg p-8 hover-lift">
-                      <div className="flex items-center mb-4">
-                        <div className={`w-3 h-3 rounded-full mr-3 ${
-                          exp.color === 'secondary' ? 'bg-secondary' :
-                          exp.color === 'accent' ? 'bg-accent' :
-                          'bg-primary'
-                        }`}></div>
-                        <span className={`text-sm font-medium ${
-                          exp.color === 'secondary' ? 'text-secondary' :
-                          exp.color === 'accent' ? 'text-accent' :
-                          'text-primary'
-                        }`}>
-                          {exp.period}
-                        </span>
+
+                {/* Desktop layout - alternating timeline */}
+                <div className="hidden lg:flex items-center">
+                  {/* Left content area */}
+                  <div className="w-1/2 pr-8">
+                    {exp.side === 'left' && (
+                      <div className="bg-white rounded-xl shadow-lg p-8 hover-lift">
+                        <div className="flex items-center mb-4">
+                          <div className={`w-3 h-3 rounded-full mr-3 ${
+                            exp.color === 'secondary' ? 'bg-secondary' :
+                            exp.color === 'accent' ? 'bg-accent' :
+                            'bg-primary'
+                          }`}></div>
+                          <span className={`text-sm font-medium ${
+                            exp.color === 'secondary' ? 'text-secondary' :
+                            exp.color === 'accent' ? 'text-accent' :
+                            'text-primary'
+                          }`}>
+                            {exp.period}
+                          </span>
+                        </div>
+                        <h3 className="text-xl font-bold text-primary mb-2">{exp.position}</h3>
+                        <h4 className="text-accent font-medium mb-4">{exp.company}</h4>
+                        <ul className="text-muted-foreground space-y-2">
+                          {exp.responsibilities.map((resp, respIndex) => (
+                            <li key={respIndex} className="flex items-start">
+                              <CheckCircle className="w-4 h-4 text-accent mt-1 mr-2 flex-shrink-0" />
+                              {resp}
+                            </li>
+                          ))}
+                        </ul>
                       </div>
-                      <h3 className="text-xl font-bold text-primary mb-2">{exp.position}</h3>
-                      <h4 className="text-accent font-medium mb-4">{exp.company}</h4>
-                      <ul className="text-muted-foreground space-y-2">
-                        {exp.responsibilities.map((resp, respIndex) => (
-                          <li key={respIndex} className="flex items-start">
-                            <CheckCircle className="w-4 h-4 text-accent mt-1 mr-2 flex-shrink-0" />
-                            {resp}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
+                    )}
+                  </div>
+                  
+                  {/* Timeline dot */}
+                  <div className="relative z-10">
+                    <div className={`w-6 h-6 rounded-full border-4 border-white shadow-lg ${
+                      exp.color === 'secondary' ? 'bg-secondary' :
+                      exp.color === 'accent' ? 'bg-accent' :
+                      'bg-primary'
+                    }`}></div>
+                  </div>
+                  
+                  {/* Right content area */}
+                  <div className="w-1/2 pl-8">
+                    {exp.side === 'right' && (
+                      <div className="bg-white rounded-xl shadow-lg p-8 hover-lift">
+                        <div className="flex items-center mb-4">
+                          <div className={`w-3 h-3 rounded-full mr-3 ${
+                            exp.color === 'secondary' ? 'bg-secondary' :
+                            exp.color === 'accent' ? 'bg-accent' :
+                            'bg-primary'
+                          }`}></div>
+                          <span className={`text-sm font-medium ${
+                            exp.color === 'secondary' ? 'text-secondary' :
+                            exp.color === 'accent' ? 'text-accent' :
+                            'text-primary'
+                          }`}>
+                            {exp.period}
+                          </span>
+                        </div>
+                        <h3 className="text-xl font-bold text-primary mb-2">{exp.position}</h3>
+                        <h4 className="text-accent font-medium mb-4">{exp.company}</h4>
+                        <ul className="text-muted-foreground space-y-2">
+                          {exp.responsibilities.map((resp, respIndex) => (
+                            <li key={respIndex} className="flex items-start">
+                              <CheckCircle className="w-4 h-4 text-accent mt-1 mr-2 flex-shrink-0" />
+                              {resp}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                  </div>
                 </div>
               </div>
             ))}
