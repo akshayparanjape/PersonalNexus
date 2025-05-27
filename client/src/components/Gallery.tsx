@@ -22,8 +22,8 @@ export default function Gallery() {
         description: "Attending Control trade fair - manufacturing automation event"
       },
       {
-        src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-        title: "Research Laboratory",
+        src: "https://images.unsplash.com/photo-1582719471384-894fbb16e074?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+        title: "Affiliated Institute",
         description: "WZL RWTH Aachen & Fraunhofer IPT - Advanced manufacturing and AI research facilities"
       }
     ],
