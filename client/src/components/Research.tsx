@@ -63,10 +63,10 @@ export default function Research() {
             Bridging academic research with industry applications through peer-reviewed publications and innovative research projects.
           </p>
         </div>
-        
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
+
+        <div className="grid lg:grid-cols-3 gap-6 lg:gap-8">
           {/* Research Areas */}
-          <div>
+          <div className="lg:col-span-1">
             <h3 className="text-2xl font-bold text-primary mb-6">Research Focus Areas</h3>
             <div className="space-y-4">
               {researchAreas.map((area, index) => (
@@ -89,10 +89,25 @@ export default function Research() {
                 </div>
               ))}
             </div>
+
+            {/* Research Metrics moved here */}
+            <div className="mt-6 bg-slate-50 rounded-xl p-5">
+              <h4 className="font-bold text-primary mb-3">Research Impact</h4>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-secondary mb-1">9</div>
+                  <div className="text-sm text-muted-foreground">Research Projects</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-accent mb-1">8+</div>
+                  <div className="text-sm text-muted-foreground">Publications</div>
+                </div>
+              </div>
+            </div>
           </div>
-          
+
           {/* Recent Research Projects */}
-          <div>
+          <div className="lg:col-span-1">
             <h3 className="text-2xl font-bold text-primary mb-6">Notable Research Projects</h3>
             <div className="space-y-4">
               {researchProjects.map((project, index) => (
@@ -112,38 +127,25 @@ export default function Research() {
                 </div>
               ))}
             </div>
-            
-            {/* Research Metrics */}
-            <div className="mt-6 bg-slate-50 rounded-xl p-5">
-              <h4 className="font-bold text-primary mb-3">Research Impact</h4>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-secondary mb-1">9</div>
-                  <div className="text-sm text-muted-foreground">Research Projects</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-accent mb-1">8+</div>
-                  <div className="text-sm text-muted-foreground">Publications</div>
-                </div>
-              </div>
-            </div>
 
             {/* Key Publications */}
-            <div className="mt-6">
-              <h4 className="font-bold text-primary mb-4">Key Publications</h4>
+          </div>
+          
+          <div className="lg:col-span-1">
+            <h3 className="text-2xl font-bold text-primary mb-4">Key Publications</h3>
               <div className="space-y-4">
                 <div className="bg-white p-4 rounded-lg border-l-4 border-secondary">
                   <h5 className="font-medium text-primary mb-2">Reinforcement Learning for Quality-Oriented Production Process Parameter Optimization Based on Predictive Models</h5>
                   <p className="text-sm text-muted-foreground mb-2">Advances in Transdisciplinary Engineering, Vol. 23, 2023</p>
                   <a href="https://doi.org/10.3233/ATDE230059" className="text-secondary text-sm hover:underline">View Publication →</a>
                 </div>
-                
+
                 <div className="bg-white p-4 rounded-lg border-l-4 border-accent">
                   <h5 className="font-medium text-primary mb-2">Real-time Quality Monitoring of Wire EDM Process Using Machine Learning</h5>
                   <p className="text-sm text-muted-foreground mb-2">18th CIRP Conference on Intelligent Computation in Manufacturing Engineering, 2024</p>
                   <a href="#" className="text-accent text-sm hover:underline">View Publication →</a>
                 </div>
-                
+
                 <div className="bg-white p-4 rounded-lg border-l-4 border-primary">
                   <h5 className="font-medium text-primary mb-2">Automated Data Pre-processing for Machine Learning based Analyses</h5>
                   <p className="text-sm text-muted-foreground mb-2">COLLA 2022, The Twelfth International Conference, Venice, Italy</p>
@@ -203,7 +205,6 @@ export default function Research() {
                 </a>
               </div>
             </div>
-          </div>
         </div>
       </div>
     </section>
