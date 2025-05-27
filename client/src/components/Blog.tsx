@@ -76,7 +76,15 @@ export default function Blog() {
                       day: 'numeric' 
                     })}</span>
                   </div>
-                  <Button variant="ghost" className="text-secondary hover:text-secondary/80 p-0">
+                  <Button 
+                    variant="ghost" 
+                    className="text-secondary hover:text-secondary/80 p-0"
+                    onClick={() => {
+                      // For now, you could navigate to a blog post detail page
+                      // window.location.href = `/blog/${post.id}`;
+                      console.log(`Navigate to blog post: ${post.id}`);
+                    }}
+                  >
                     Read More →
                   </Button>
                 </div>
